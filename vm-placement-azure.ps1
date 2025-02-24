@@ -68,7 +68,7 @@ $VMConfig = New-AzVMConfig -VMName $VMName -VMSize $VMSize -ProximityPlacementGr
     Add-AzVMNetworkInterface -Id $NIC.Id
 
 # Create the VM
-New-AzVM -ResourceGroupName $resourceGroup.ResourceGroupName -Location $Location -VM $VMConfig
+New-AzVM -ResourceGroupName $ResourceGroup.ResourceGroupName -Location $Location -VM $VMConfig
 
 
 # .............................................................................................................
@@ -90,7 +90,7 @@ $VMConfig = New-AzVMConfig -VMName $VMName -VMSize $VMSize -AvailabilitySetId $A
     Add-AzVMNetworkInterface -Id $NIC.Id
 
 # Create the VM
-New-AzVM -ResourceGroupName $resourceGroup.ResourceGroupName -Location $Location -VM $VMConfig
+New-AzVM -ResourceGroupName $ResourceGroup.ResourceGroupName -Location $Location -VM $VMConfig
 
 
 #............................................................................................................
