@@ -21,3 +21,15 @@ Spreads your VMs across logical partitions, where groups of instances in one par
 # [Azure](vm-placement-azure.ps1)
 
 ---
+
+## Proximity Placement Groups:
+
+Like AWS CPG, improves latency and performance by ensuring VMs are physically located close to each other.
+
+## Availability Sets:
+
+Similar to AWS SPG. Improves fault tolerance and redundancy by distributing VMs across Fault Domains (hardware failure isolation) and Update Domains (maintenance isolation).
+
+## Virtual Machine Scale Sets:
+
+While not a direct equivalence of AWS PPG, it provides similar scalability and redundancy by automatically distributing instances across Fault Domains over multiple AZs.
